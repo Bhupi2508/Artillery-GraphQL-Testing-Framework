@@ -1,0 +1,46 @@
+# artillery run script.yml
+# artillery run script.yml --output report.json
+
+# Command for DEBUG =>> $env:DEBUG="artillery:*"; artillery run script.yml
+# artillery run script.yml --output report.json
+# artillery report --output report.html report.json
+
+    # - name: constant_arrival_rate
+    #   duration: 1
+    #   arrivalRate: 1
+    # - name: rampup_rate
+    #   duration: 60
+    #   arrivalRate: 10
+    #   rampTo: 50
+    # - name: fixed_arrivals
+    #   duration: 60
+    #   arrivalCount: 120 
+
+
+# mutation CreateUser($input: CreateUserInput!) {
+#   createUser(input: $input) {
+#     id
+#     name
+#     email
+#   }
+# }
+
+# {
+#   "input": {
+#     "name": "John Doe",
+#     "email": "john.doe@example.com"
+#   }
+# }
+
+# mutation UpdateUserEmail($id: ID!, $email: String!) {
+#   updateUserEmail(id: $id, email: $email) {
+#     id
+#     name
+#     email
+#   }
+# }
+
+# {
+#   "id": "1",
+#   "email": "new.email@example.com"
+# }
